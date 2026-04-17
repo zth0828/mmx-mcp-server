@@ -1,0 +1,45 @@
+{
+  "name": "mmx-mcp-server",
+  "version": "1.0.0",
+  "description": "A unified Model Context Protocol server for MiniMax CLI (mmx)",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "mmx-mcp-server": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "README_EN.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "mcp",
+    "minimax",
+    "mmx",
+    "ai",
+    "multimodal"
+  ],
+  "author": "bingking <zth285130@163.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zth0828/mmx-mcp-server.git"
+  },
+  "bugs": {
+    "url": "https://github.com/zth0828/mmx-mcp-server/issues"
+  },
+  "homepage": "https://github.com/zth0828/mmx-mcp-server#readme",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  }
+}
