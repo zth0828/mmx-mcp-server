@@ -12,7 +12,7 @@ If you are using Claude Code, OpenCode, or any other AI CLI tool that supports M
 
 > Please install and configure mmx-mcp-server for me:
 > 1. Globally install mmx-cli (`npm install -g mmx-cli`)
-> 2. Clone https://github.com/YOUR_USERNAME/mmx-mcp-server to any directory and run `npm install && npm run build`
+> 2. Clone https://github.com/zth0828/mmx-mcp-server to any directory and run `npm install && npm run build`
 > 3. Add an `mmx` server entry to my MCP config file (e.g. `~/.claude/settings.json`) pointing to the built artifact `dist/index.js`
 > 4. Ask me for my MiniMax API Key and inject it via `env.MINIMAX_API_KEY`
 > 5. Tell me the result when done

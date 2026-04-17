@@ -12,7 +12,7 @@
 
 > 帮我安装并配置 mmx-mcp-server：
 > 1. 全局安装 mmx-cli（`npm install -g mmx-cli`）
-> 2. 克隆 https://github.com/YOUR_USERNAME/mmx-mcp-server 到任意目录，执行 `npm install && npm run build`
+> 2. 克隆 https://github.com/zth0828/mmx-mcp-server 到任意目录，执行 `npm install && npm run build`
 > 3. 在我的 MCP 配置文件（如 `~/.claude/settings.json`）里添加 `mmx` server，指向构建产物 `dist/index.js`
 > 4. 向我要 MiniMax API Key，并通过 `env.MINIMAX_API_KEY` 注入
 > 5. 完成后告诉我配置结果
