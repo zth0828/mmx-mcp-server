@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  background: #0d1117;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, monospace;
+}
+.terminal {
+  width: 900px;
+  background: #161b22;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  overflow: hidden;
+  border: 1px solid #30363d;
+}
+.titlebar {
+  background: #21262d;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.dot { width: 12px; height: 12px; border-radius: 50%; }
+.dot.r { background: #ff5f56; }
+.dot.y { background: #ffbd2e; }
+.dot.g { background: #27c93f; }
+.title-text {
+  margin-left: 12px;
+  color: #8b949e;
+  font-size: 13px;
+  font-weight: 500;
+}
+.content {
+  padding: 22px 26px;
+  color: #c9d1d9;
+  font-size: 13.5px;
+  line-height: 1.65;
+}
+.prompt {
+  color: #7ee787;
+  font-weight: 600;
+}
+.cmd {
+  color: #e6edf3;
+}
+.comment {
+  color: #8b949e;
+}
+.key { color: #7ee787; }
+.str { color: #a5d6ff; }
+.num { color: #79c0ff; }
+.bool { color: #ff7b72; }
+.bracket { color: #d2a8ff; }
+.tool-name {
+  color: #ffa657;
+  font-weight: 600;
+}
+pre { white-space: pre-wrap; word-break: break-word; }
+.line { margin-bottom: 6px; }
+.section-title {
+  color: #58a6ff;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 10px;
+}
+.badge {
+  display: inline-block;
+  background: #238636;
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+.tool-row {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+</style>
+</head>
+<body>
+<div class="terminal">
+  <div class="titlebar">
+    <div class="dot r"></div>
+    <div class="dot y"></div>
+    <div class="dot g"></div>
+    <div class="title-text">mmx-mcp-server — zsh</div>
+  </div>
+  <div class="content">
+    <div class="line"><span class="prompt">➜</span> <span class="cmd">node dist/index.js --help</span></div>
+    <div class="line">mmx-mcp-server v1.0.0</div>
+    <div class="line">A unified MCP server for MiniMax CLI (mmx).</div>
+    <div class="line comment">Environment Variables: MINIMAX_API_KEY, MMX_OUTPUT_DIR</div>
+    <div class="line">&nbsp;</div>
+
+    <div class="line"><span class="prompt">➜</span> <span class="cmd">tools/list</span> <span class="comment"># 8 tools registered ✅</span></div>
+    <div class="line">&nbsp;</div>
+
+    <div class="line section-title">Available Tools</div>
+
+    <div class="tool-row">
+      <span class="badge">search</span>
+      <span class="tool-name">mmx_search</span>
+      <span class="comment">— Web search with MiniMax</span>
+    </div>
+    <div class="tool-row">
+      <span class="badge">vision</span>
+      <span class="tool-name">mmx_vision_describe</span>
+      <span class="comment">— Image understanding + UI critique</span>
+    </div>
+    <div class="tool-row">
+      <span class="badge">chat</span>
+      <span class="tool-name">mmx_text_chat</span>
+      <span class="comment">— Text chat (system prompt / JSON mode)</span>
+    </div>
+    <div class="tool-row">
+      <span class="badge">image</span>
+      <span class="tool-name">mmx_image_generate</span>
+      <span class="comment">— Image generation → ./mmx_image</span>
+    </div>
+    <div class="tool-row">
+      <span class="badge">video</span>
+      <span class="tool-name">mmx_video_generate</span>
+      <span class="comment">— Video generation → ./mmx_video</span>
+    </div>
+    <div class="tool-row">
+      <span class="badge">music</span>
+      <span class="tool-name">mmx_music_generate</span>
+      <span class="comment">— Music generation → ./mmx_music</span>
+    </div>
+    <div class="tool-row">
+      <span class="badge">speech</span>
+      <span class="tool-name">mmx_speech_synthesize</span>
+      <span class="comment">— TTS → ./mmx_speech</span>
+    </div>
+    <div class="tool-row">
+      <span class="badge">quota</span>
+      <span class="tool-name">mmx_quota_show</span>
+      <span class="comment">— Usage quotas panel</span>
+    </div>
+
+    <div class="line">&nbsp;</div>
+    <div class="line"><span class="prompt">➜</span> <span class="cmd">mmx_image_generate</span> <span class="comment"># called by Claude Code</span></div>
+    <div class="line">{</div>
+    <div class="line">  <span class="key">"prompt"</span>: <span class="str">"cyberpunk city nightscape, neon lights, rain"</span>,</div>
+    <div class="line">  <span class="key">"aspect_ratio"</span>: <span class="str">"16:9"</span></div>
+    <div class="line">}</div>
+    <div class="line">&nbsp;</div>
+    <div class="line"><span class="comment">✅ Generated files:</span></div>
+    <div class="line"><span class="str">/project/mmx_image/image_001.png</span></div>
+  </div>
+</div>
+</body>
+</html>
