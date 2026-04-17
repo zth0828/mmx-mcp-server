@@ -2,6 +2,8 @@
 
 一个统一的 MiniMax 全模态 MCP Server，基于 `mmx` CLI 封装，支持文本、搜索、图像理解、图像生成、语音合成、视频生成、音乐生成和配额查询。
 
+![Preview](assets/preview.png)
+
 > [English README](README_EN.md)
 
 ## 快速开始（一句话配置）

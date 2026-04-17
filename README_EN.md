@@ -2,6 +2,8 @@
 
 A unified Model Context Protocol (MCP) server for MiniMax, wrapping the `mmx` CLI. Supports text chat, web search, vision understanding, image generation, speech synthesis, video generation, music generation, and quota queries.
 
+![Preview](assets/preview.png)
+
 > [中文 README](README.md)
 
 ## Quick Start (One-sentence setup)
