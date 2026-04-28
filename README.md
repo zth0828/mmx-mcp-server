@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/zth0828-mmx-mcp-server-badge.png)](https://mseep.ai/app/zth0828-mmx-mcp-server)
+
 # mmx-mcp-server
 
 一个统一的 MiniMax 全模态 MCP Server，基于 `mmx` CLI 封装，支持文本、搜索、图像理解、图像生成、语音合成、视频生成、音乐生成和配额查询。
